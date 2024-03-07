@@ -2,8 +2,8 @@ import './Header.scss';
 
 function Header() {
     return (
-        <header>
-            Header
+        <header className="header">
+            <h1>What Should I Do?</h1>
         </header>
     )
 }
