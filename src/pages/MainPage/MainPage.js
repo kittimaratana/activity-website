@@ -4,6 +4,8 @@ import './MainPage.scss';
 import { useNavigate } from "react-router-dom";
 import backgroundImage from "../../Images/emotion.jpg"
 import Button from '@mui/material/Button';
+import Box from '@mui/material/Box';
+
 
 function MainPage() {
     const navigate = useNavigate();
@@ -26,9 +28,9 @@ function MainPage() {
     return (
         <main className="hero">
             <img src={backgroundImage} alt="background image" className="hero__image" />
-            <form id="mood-form" className="hero__mood-form" onSubmit={handleMoodSubmit}>
+            <form  variant="filled"component="form" label="controled" id="mood-form" className="hero__mood-form" onSubmit={handleMoodSubmit}>
                 <div>
-                    <label htmlFor="mood">Select Mood: </label>
+                    <label label={'margin="dense"'} className='hero__label' htmlFor="mood">Select Mood: </label>
                     <select className="hero__mood-input" name="mood" id="mood">
                         <option value="sad">Sad</option>
                         <option value="adventurous">Adventurous</option>
@@ -37,7 +39,7 @@ function MainPage() {
                         <option value="productive">Productive</option>
                     </select>
                 </div>
-                <Button color="success" variant="contained"  type="submit">Find out now!</Button>
+                <Button  className="hero__button" color="success" variant="contained"  type="submit">Find out now!</Button>
             </form>
         </main>
     );

@@ -4,18 +4,27 @@
     width: 100%;
     height: 42rem;
     background-size: cover;
-    object-fit: cover; 
+    object-fit: cover;
+}
+
+.hero__label {
+    text-transform: uppercase;
 }
 
 .hero__mood-form {
     display: flex;
     flex-wrap: wrap;
     justify-content: end;
-    gap: 0.5rem;
+    gap: 1rem;
+    margin-right: 1rem;
 }
 
 .hero__mood-input {
     height: 2.5rem;
+}
+
+.hero__button {
+    margin-right: 2rem;
 }
 
 .background-image2 {
@@ -24,4 +33,3 @@
     background-size: cover;
     background-image: url("../../Images/emotion.jpg");
 }
-

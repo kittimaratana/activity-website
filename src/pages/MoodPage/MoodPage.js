@@ -105,7 +105,7 @@ function MoodPage() {
                 <div className="mood-activity__mood"> Feeling : {userMood} </div>
                 <p className="mood-activity__activity">{activityItem.activity}</p>
                 <div className="mood-activity__options">
-                    <Button   color="success" variant="contained" onClick={handleCancelClick}>Go Back</Button>
+                    <Button color="success" variant="contained" onClick={handleCancelClick}>Go Back</Button>
                     <Button color="success" variant="contained" onClick={handleNewActivityClick}>Choose Another Activity</Button>
                 </div>
             </section>
