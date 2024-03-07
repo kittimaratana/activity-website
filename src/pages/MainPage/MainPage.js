@@ -3,6 +3,7 @@
 import './MainPage.scss';
 import { useNavigate } from "react-router-dom";
 import backgroundImage from "../../Images/emotion.jpg"
+import Button from '@mui/material/Button';
 
 function MainPage() {
     const navigate = useNavigate();
@@ -36,7 +37,7 @@ function MainPage() {
                         <option value="productive">Productive</option>
                     </select>
                 </div>
-                <button type="submit">Find out now!</button>
+                <Button color="success" variant="contained"  type="submit">Find out now!</Button>
             </form>
         </main>
     );
