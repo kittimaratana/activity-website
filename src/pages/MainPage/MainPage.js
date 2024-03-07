@@ -1,10 +1,7 @@
 //use the USE param to see /:moodId
 //call the api after that
 import './MainPage.scss';
-import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
 import backgroundImage from "../../Images/emotion.jpg"
 
 function MainPage() {
